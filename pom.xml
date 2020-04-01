@@ -8,4 +8,12 @@
     <artifactId>grokking-algorithms-java</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>19.0.0</version>
+        </dependency>
+
+    </dependencies>
 </project>
