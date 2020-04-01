@@ -1,2 +1,2 @@
 # grokking-algorithms-java
-Location in Book: Chapter 2
+Location in Book: Chapter 3
