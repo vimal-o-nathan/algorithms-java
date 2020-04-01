@@ -1,4 +1,4 @@
-package com.vimal.grokking.algorithms.chapter.three;
+package com.vimal.grokking.algorithms.chapter.three.recursion;
 
 import com.vimal.grokking.algorithms.chapter.three.domain.Box;
 import com.vimal.grokking.algorithms.chapter.three.domain.Item;
