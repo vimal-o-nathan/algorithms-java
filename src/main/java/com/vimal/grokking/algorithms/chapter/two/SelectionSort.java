@@ -1,6 +1,5 @@
 package com.vimal.grokking.algorithms.chapter.two;
 
-import com.vimal.grokking.algorithms.exception.DoNotInstantiateException;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
@@ -10,7 +9,7 @@ import java.util.List;
 public class SelectionSort {
 
     private SelectionSort() {
-        throw new DoNotInstantiateException();
+        throw new IllegalStateException("Do not instantiate this utility class");
     }
 
     private static int findSmallest(@NotNull final List<Integer> list) {
