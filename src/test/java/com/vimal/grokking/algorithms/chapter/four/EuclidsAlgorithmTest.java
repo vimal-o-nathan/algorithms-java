@@ -24,4 +24,13 @@ public class EuclidsAlgorithmTest {
 
         Assert.assertEquals(expected, findGreatestCommonDivisor(a, b));
     }
+
+    @Test
+    public void testGCDFor1680And64() {
+        final int a = 1680;
+        final int b = 640;
+        final int expected = 80;
+
+        Assert.assertEquals(expected, findGreatestCommonDivisor(a, b));
+    }
 }
