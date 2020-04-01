@@ -3,21 +3,18 @@ package com.vimal.grokking.algorithms.chapter.one;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.Arrays;
-import java.util.List;
-
 public class BinarySearch {
 
     @Nullable
-    public static Integer binarySearch(@NotNull final List<Integer> list, @NotNull final Integer item) {
+    public static Integer binarySearch(@NotNull final int[] list, final int item) {
         int low = 0;
-        int high = list.size();
+        int high = list.length;
 
         while (low <= high) {
             int mid = (low + high) / 2;
-            Integer guess = list.get(mid);
+            int guess = list[mid];
 
-            if (guess.equals(item)) {
+            if (guess == item) {
                 return mid;
             } else if (guess > item) {
                 high = mid - 1;
@@ -30,7 +27,7 @@ public class BinarySearch {
     }
 
     public static void main(String[] args) {
-        List<Integer> myList = Arrays.asList(1, 3, 5, 7, 9);
+        int[] myList = {1, 3, 5, 7, 9};
         System.out.println(binarySearch(myList, 3));
         System.out.println(binarySearch(myList, -1));
     }
