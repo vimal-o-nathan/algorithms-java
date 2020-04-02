@@ -3,7 +3,6 @@ package com.vimal.grokking.algorithms.chapter.two;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class SelectionSort {
@@ -36,15 +35,5 @@ public class SelectionSort {
         }
 
         return newList;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(
-                selectionSort(
-                        new ArrayList<>(
-                                Arrays.asList(5, 3, 6, 2, 10)
-                        )
-                )
-        );
     }
 }
