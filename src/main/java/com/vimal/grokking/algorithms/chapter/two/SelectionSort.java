@@ -11,12 +11,12 @@ public class SelectionSort {
         throw new IllegalStateException("Do not instantiate this utility class");
     }
 
-    private static int findSmallest(@NotNull final List<Integer> list) {
-        int smallest = list.get(0);
+    private static <X extends Comparable<X>> int findSmallest(@NotNull final List<X> list) {
+        X smallest = list.get(0);
         int smallestIndex = 0;
 
         for (int i = 1; i < list.size(); i++) {
-            if (list.get(i) < smallest) {
+            if (list.get(i).compareTo(smallest) < 0) {
                 smallest = list.get(i);
                 smallestIndex = i;
             }
@@ -26,8 +26,8 @@ public class SelectionSort {
     }
 
     @NotNull
-    public static List<Integer> selectionSort(@NotNull final List<Integer> list) {
-        List<Integer> newList = new ArrayList<>();
+    public static <X extends Comparable<X>> List<X> selectionSort(@NotNull final List<X> list) {
+        List<X> newList = new ArrayList<>();
 
         while (!list.isEmpty()) {
             int smallest = findSmallest(list);
