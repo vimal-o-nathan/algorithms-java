@@ -12,7 +12,7 @@ public class RecursiveMaximum {
     }
 
     @Nullable
-    public static <X extends Comparable> X findMaximum(@NotNull final List<X> list) {
+    public static <X extends Comparable<X>> X findMaximum(@NotNull final List<X> list) {
         if (list.isEmpty()) {
             return null;
         } else if (list.size() == 1) {
